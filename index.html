@@ -26,38 +26,59 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <hr class="my-4" />
+      <p>Current Day: <span id="#currentDay"></span></p>  
     </header>
 
-  <main class="card d-flex flex-column ">
-      <div class="m-5 row justify-content-around">
-            <!-- timeblocks -->
+  <main class="card d-flex flex-column" aria-label="work">
+                <div class="d-inline-flex">
+                  <button type="button" class="btn" disabled>9AM</button>
+                  <button type="button" id="taskNote" class="btn btn-primary btn-lg btn-block"></button>  
+                  <button type="button" class="btn btn-success btn-lg">Save</button>
+                </div>
+                <div class="d-inline-flex">
+                  <button type="button" class="btn" disabled>10AM</button>
+                  <button type="button" class="btn btn-primary btn-lg btn-block"></button>  
+                  <button type="button" class="btn btn-success btn-lg">Save</button>
+                </div>
+                <div class="d-inline-flex">
+                  <button type="button" class="btn" disabled>11AM</button>
+                  <button type="button" class="btn btn-primary btn-lg btn-block"></button>  
+                  <button type="button" class="btn btn-success btn-lg">Save</button>
+                </div>
+                <div class="d-inline-flex">
+                  <button type="button" class="btn" disabled>12PM</button>
+                  <button type="button" class="btn btn-primary btn-lg btn-block"></button>  
+                  <button type="button" class="btn btn-success btn-lg">Save</button>
+                </div>
+                <div class="d-inline-flex">
+                  <button type="button" class="btn" disabled>1PM</button>
+                  <button type="button" class="btn btn-primary btn-lg btn-block"></button>  
+                  <button type="button" class="btn btn-success btn-lg">Save</button>
+                </div>
+                <div class="d-inline-flex">
+                  <button type="button" class="btn" disabled>2PM</button>
+                  <button type="button" class="btn btn-primary btn-lg btn-block"></button>  
+                  <button type="button" class="btn btn-success btn-lg">Save</button>
+                </div>
+                <div class="d-inline-flex">
+                  <button type="button" class="btn" disabled>3PM</button>
+                  <button type="button" class="btn btn-primary btn-lg btn-block"></button>  
+                  <button type="button" class="btn btn-success btn-lg">Save</button>
+                </div>
+                <div class="d-inline-flex">
+                  <button type="button" class="btn" disabled>4PM</button>
+                  <button type="button" class="btn btn-primary btn-lg btn-block"></button>  
+                  <button type="button" class="btn btn-success btn-lg">Save</button>
+                </div>
+                <div class="d-inline-flex">
+                  <button type="button" class="btn" disabled>5PM</button>
+                  <button type="button" class="btn btn-primary btn-lg btn-block"></button>  
+                  <button type="button" class="btn btn-success btn-lg">Save</button>
+                </div>
+    </main>
 
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  9AM
-                </div>
-                <div class="col-6">
-                </div>
-                <div class="col">
-                  Save
-                </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  10AM
-                </div>
-                <div class="col-6">
-                </div>
-                <div class="col">
-                  Save
-                </div>
-              </div>
-    </div>
-  </main>
-
+    <script src="/work.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
