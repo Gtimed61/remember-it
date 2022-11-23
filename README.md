@@ -13,4 +13,10 @@ The task will persist through reloading of page using local storage.
 
 ## Deloyed
 
+https://gtimed61.github.io/remember-it/
+
+## Repo 
+
+https://github.com/Gtimed61/remember-it.git
+
 
