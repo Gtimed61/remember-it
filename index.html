@@ -26,118 +26,79 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <hr class="my-4" />
-      <p>Current Day: <span id="#currentDay"></span></p>  
+      <p id="currentDay"></p>  
     </header>
 
   <main class="container d-flex flex-column">
   <!-- Time blocks -->
-    <div class="container">
-      <div class="row">
-        <div class="col-2">
+      <div class="row time-block" id="9am">
+        <div class="col-md-1 hour">
           <p class="hour">9AM</p>
         </div>
-        <div class="col-8">
-          <ul class="w-100 p-4 h-auto d-inline-block list-group-item list-group-item-secondary list-group-item-lg" id="list-9AM"></ul>
-        </div>
-        <div class="col-2">
-          <button class="w-100 p-4 h-auto d-inline-block btn btn-info btn-lg" id="9AMBtn"></button>
-        </div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-2">
+      <div class="row time-block" id="10am">
+        <div class="col-md-1 hour">
           <p class="hour">10AM</p>
         </div>
-        <div class="col-8">
-          <ul class="w-100 p-4 h-auto d-inline-block list-group-item list-group-item-secondary list-group-item-lg" id="list-10AM"></ul>
-        </div>
-        <div class="col-2">
-          <button class="w-100 p-4 h-auto d-inline-block btn btn-info btn-lg" id="10AMBtn"></button>
-        </div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-2">
-          <p class="hour">11AM`</p>
+      <div class="row time-block" id="11am">
+        <div class="col-md-1 hour">
+          <p class="hour">11AM</p>
         </div>
-        <div class="col-8">
-          <ul class="w-100 p-4 h-auto d-inline-block list-group-item list-group-item-secondary list-group-item-lg" id="list-11AM"></ul>
-        </div>
-        <div class="col-2">
-          <button class="w-100 p-4 h-auto d-inline-block btn btn-info btn-lg" id="11AMBtn"></button>
-        </div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-2">
+      <div class="row time-block" id="12pm">
+        <div class="col-md-1 hour">
           <p class="hour">12PM</p>
         </div>
-        <div class="col-8">
-          <ul class="w-100 p-4 h-auto d-inline-block list-group-item list-group-item-secondary list-group-item-lg" id="list-12PM"></ul> 
-        </div>
-        <div class="col-2">
-          <button class="w-100 p-4 h-auto d-inline-block btn btn-info btn-lg" id="12PMBtn"></button>
-        </div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-2">
+      <div class="row time-block" id="1pm">
+        <div class="col-md-1 hour">
           <p class="hour">1PM</p>
         </div>
-        <div class="col-8">
-          <ul class="w-100 p-4 h-auto d-inline-block list-group-item list-group-item-secondary list-group-item-lg" id="list-1PM"></ul>
-        </div>
-        <div class="col-2">
-          <button class="w-100 p-4 h-auto d-inline-block btn btn-info btn-lg" id="1PMBtn"></button>
-        </div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-2">
+      <div class="row time-block" id="2pm">
+        <div class="col-md-1 hour">
           <p class="hour">2PM</p>
         </div>
-        <div class="col-8">
-          <ul class="w-100 p-4 h-auto d-inline-block list-group-item list-group-item-secondary list-group-item-lg" id="list-2PM"></ul>
-        </div>
-        <div class="col-2">
-          <button class="w-100 p-4 h-auto d-inline-block btn btn-info btn-lg" id="2PMBtn"></button>
-        </div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-2">
+      <div class="row time-block" id="3pm">
+        <div class="col-md-1 hour">
           <p class="hour">3PM</p>
         </div>
-        <div class="col-8">
-          <ul class="w-100 p-4 h-auto d-inline-block list-group-item list-group-item-secondary list-group-item-lg" id="list-3PM"></ul>
-        </div>
-        <div class="col-2">
-          <button class="w-100 p-4 h-auto d-inline-block btn btn-info btn-lg" id="3PMBtn"></button>
-        </div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-2">
+      <div class="row time-block" id="4pm">
+        <div class="col-md-1 hour">
           <p class="hour">4PM</p>
         </div>
-        <div class="col-8">
-          <ul class="w-100 p-4 h-auto d-inline-block list-group-item list-group-item-secondary list-group-item-lg" id="list-4PM"></ul>
-        </div>
-        <div class="col-2">
-          <button class="w-100 p-4 h-auto d-inline-block btn btn-info btn-lg" id="4PMBtn"></button>
-        </div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-2">
+      <div class="row time-block" id="5pm">
+        <div class="col-md-1 hour">
           <p class="hour">5PM</p>
         </div>
-        <div class="col-8">
-          <ul class="w-100 p-4 h-auto d-inline-block list-group-item list-group-item-secondary list-group-item-lg" id="list-5PM"></ul>
-        </div>
-        <div class="col-2">
-          <button class="w-100 p-4 h-auto d-inline-block btn btn-info btn-lg" id="5PMBtn"></button>
-        </div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
       </div>
-    </div>
-
   </main>
 
-    <script src="/work.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./work.js"></script> 
+  
   </body>
 </html>
